@@ -8,9 +8,9 @@ import 'package:stripe_payment/stripe_payment.dart';
 
 class StripeProvider {
   BuildContext context;
-  String secret = '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';
+  String secret = 'tu_token_de_stripe_para_pagos';
   Map<String,String> headers = {
-    'Authorization':'Bearer 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',
+    'Authorization':'Bearer token_autorizacion_stripe',
     'Content-Type':'application/x-www-form-urlencoded'
   };
 
@@ -18,7 +18,7 @@ class StripeProvider {
     this.context = context;
     StripePayment.setOptions(
       StripeOptions(
-          publishableKey: 'pk_live_51KjprTKh484jWACTF0dDwQVq7fJ251WdAZGNp3OFGvg1ngCrfuwhayofgTpNunhq4c5F8oIpYR93aMfzbXhBk3sT00yoUyitsh',
+          publishableKey: 'llae_publica_stripe_para_pagos',
           //para modo producción hay que quitar los dos valores de abajo IMPORTANTE
           merchantId: 'test',
           androidPayMode: 'test'
